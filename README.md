@@ -1,8 +1,10 @@
 # rslog
 
-An opinionated library for logging locally. It will log a timestamp, the function name and colourize based on keywords in the log string that may indicate an error or warning.
+An opinionated library for logging locally.  
 
-![Screenshot](misc/ss.png)
+It will log a timestamp, the function name and colourize based on keywords in the log string that may indicate an error or warning.
+
+<img src="misc/ss.png" alt="Screenshot" width="70%">
 
 ## Installation
 

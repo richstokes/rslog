@@ -1,5 +1,6 @@
 import inspect
 from datetime import datetime
+from .special_strings import error_strings, success_strings, warning_strings
 
 def rslog(message: str) -> None:
     # TODO: Detect if we are running inside a packaged app or not, dont log to console if we are
@@ -7,13 +8,6 @@ def rslog(message: str) -> None:
     if not message:
         return
 
-    error_strings = [
-        "error",
-        "failed",
-        "exception",
-        "critical",
-    ]
-    warning_strings = ["warning", "unsupported", "not implemented", "unable"]
     # Get the current time in HH:MM:SS format
     timestamp = datetime.now().strftime("%H:%M:%S")
     # Get the name of the calling function
@@ -37,6 +31,10 @@ def rslog(message: str) -> None:
     elif any(warning_string in message.lower() for warning_string in warning_strings):
         # Make the whole message orange
         colored_message = f"{orange}{message}{reset}"
+    # Check if the message contains the word "success" (case-insensitive)
+    elif any(success_string in message.lower() for success_string in success_strings):
+        # Make the whole message green
+        colored_message = f"{green}{message}{reset}"
     else:
         # Make the whole message the default color
         colored_message = message

@@ -1,8 +1,10 @@
 # rslog
 
-An opinionated library for logging locally.  
+A simple, opinionated library for logging locally.  
 
-It will log a timestamp, the function name and colourize based on keywords in the log string that may indicate an error or warning.
+It will log a timestamp, the function name and add colours based on keywords in the log string that may indicate an error or warning.  
+
+Drop-in replacement for `print()`. 
 
 <img src="misc/ss.png" alt="Screenshot" width="70%">
 
@@ -17,6 +19,8 @@ pip install rslog
 ```python
 from rslog import rslog
 
-rslog("Hello, PyPI!")
+rslog("Hello, world!")
+rslog("An error occurred!")
+rslog("Warning: something went wrong.")
 ```
 

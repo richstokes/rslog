@@ -1,6 +1,6 @@
 # rslog
 
-A simple, opinionated library for logging locally.  
+A simple, opinionated python library for logging locally.  
 
 It will log a timestamp, the function name and add colours based on keywords in the log string that may indicate an error or warning.  
 

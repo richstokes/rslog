@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rslog"
-version = "0.1.5"
-description = "An opinionated local logging library for Python"
+version = "0.1.7"
+description = "A simple, opinionated python library for logging locally. It will log a timestamp, the function name and add colors based on keywords in the log string that may indicate an error or warning."
 readme = "README.md"
 license = { file = "LICENSE" }
 authors = [{ name = "Rich Stokes", email = "rich@rsmail.co" }]

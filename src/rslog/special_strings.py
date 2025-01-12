@@ -9,6 +9,7 @@ error_strings = [
     "abort",
     "traceback",
     "corrupt",
+    "stacktrace",
 ]
 
 warning_strings = [
@@ -31,6 +32,8 @@ warning_strings = [
     "unconfirmed",
     "untested",
     "unreliable",
+    "incorrect",
+    "not found",
 ]
 
 

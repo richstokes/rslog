@@ -41,5 +41,6 @@ def rslog(message: str) -> None:
 
     # print the colored timestamp, caller's name, and the message
     print(
-        f"{yellow}[{timestamp}]{reset} {green}[{caller_name}]{reset} {colored_message}"
+        f"{yellow}[{timestamp}]{reset} {green}[{caller_name}]{reset} {colored_message}",
+        flush=True
     )
